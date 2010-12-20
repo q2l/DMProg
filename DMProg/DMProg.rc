@@ -1,0 +1,506 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DMProg.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DMPROG_FORM DIALOGEX 0, 0, 421, 322
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0xCC
+BEGIN
+    PUSHBUTTON      "Запись параметров",IDC_BUTTON_WRITE,324,277,90,16
+    GROUPBOX        "Последовательный порт модема",IDC_STATIC,7,216,178,99
+    GROUPBOX        " Адресация ",IDC_STATIC,8,8,406,100
+    RTEXT           "Адрес системы :",IDC_STATIC,12,22,116,8
+    RTEXT           "Адрес модема :",IDC_STATIC,12,40,116,8
+    RTEXT           "Адрес отправителя :",IDC_STATIC,12,58,116,8
+    RTEXT           "Адрес получателя :",IDC_STATIC,12,76,116,8
+    EDITTEXT        IDC_EDIT_ADDR_SYSTEM,132,20,44,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ADDR_MODEM,132,38,44,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ADDR_SENDER,132,56,44,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_ADDR_RECIEVER,132,74,44,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_ADDR_SYSTEM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,176,22,11,14
+    CONTROL         "",IDC_SPIN_ADDR_MODEM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,176,41,11,14
+    CONTROL         "",IDC_SPIN_ADDR_SENDER,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,176,55,11,14
+    CONTROL         "",IDC_SPIN_ADDR_RECIEVER,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,176,74,11,14
+    RTEXT           "Адресация при передаче :",IDC_STATIC,180,22,99,8
+    RTEXT           "Адресация при приеме :",IDC_STATIC,186,40,92,8
+    COMBOBOX        IDC_COMBO_ADDR_TX,283,20,120,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ADDR_RX,283,38,120,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        " Прием/Передача ",IDC_STATIC,7,108,407,108
+    RTEXT           "Полярность SQL :",IDC_STATIC,48,122,80,8
+    RTEXT           "Режим передачи :",IDC_STATIC,48,140,80,8
+    RTEXT           "Размер буфера, байт :",IDC_STATIC,48,176,80,8
+    RTEXT           "Код спецсимвола :",IDC_STATIC,48,158,80,8
+    RTEXT           "Таймаут последнего байта, мс :",IDC_STATIC,12,194,116,8
+    RTEXT           "Скорость бит/с :",IDC_STATIC,21,230,66,8
+    COMBOBOX        IDC_COMBO_BAUD,89,228,92,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "5",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,258,20,10
+    CONTROL         "6",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,25,272,20,10
+    CONTROL         "7",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,25,286,20,10
+    CONTROL         "8",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,25,300,20,10
+    GROUPBOX        "Данные, бит",IDC_STATIC,10,247,56,66
+    GROUPBOX        "Стоп биты",IDC_STATIC,68,247,56,66
+    CONTROL         "1",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_GROUP,82,258,20,10
+    CONTROL         "2",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,82,272,20,10
+    GROUPBOX        "Четность",IDC_STATIC,126,247,56,66
+    CONTROL         "none",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | WS_GROUP,142,258,32,10
+    CONTROL         "even",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,142,272,32,10
+    CONTROL         "odd",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,142,286,28,10
+    COMBOBOX        IDC_COMBO_SQL,132,120,128,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TXMODE,132,138,128,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SPEC_SYM,132,156,128,150,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BUFF_SIZE,132,174,44,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_BUFF_SIZE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,174,174,11,14
+    EDITTEXT        IDC_EDIT_TIMEOUT_LASTBYTE,131,192,44,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_TIMEOUT_LASTBYTE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,174,192,11,14
+    CONTROL         "Удаленное конфигурирование",IDC_CHECK_REMOVE_CONTROL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,286,122,116,10
+    CONTROL         "Эхо в режиме ""модем""",IDC_CHECK_LOCAL_ECHO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,286,140,90,10
+    RTEXT           "Таймаут перед передачей, мс :",IDC_STATIC,233,178,114,8
+    EDITTEXT        IDC_EDIT_TO_PRETRANS,351,176,44,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_TO_PRETRANS,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,393,176,11,14
+    RTEXT           "Таймаут после передачей, мс :",IDC_STATIC,233,195,114,8
+    EDITTEXT        IDC_EDIT_TO_POSTTRANS,351,192,44,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_TO_POSTTRANS,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,393,192,11,14
+    PUSHBUTTON      "COMМ",IDC_BUTTON_COMM,324,233,90,16
+    PUSHBUTTON      "Чтение параметров",IDC_BUTTON_READ,324,255,90,16
+    PUSHBUTTON      "Отмена",IDC_BUTTON_STOP,324,299,90,16
+END
+
+IDD_DIALOG_COMM DIALOGEX 0, 0, 204, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Последовательный порт"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,116,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,147,116,50,14
+    GROUPBOX        "Последовательный порт",IDC_STATIC,7,7,190,101
+    CONTROL         "COM1",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,22,22,35,10,WS_EX_TRANSPARENT
+    CONTROL         "COM2",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,22,44,35,10
+    CONTROL         "COM3",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,22,66,35,10
+    CONTROL         "COM4",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,22,88,35,10
+    CONTROL         "COM5",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,66,22,35,10,WS_EX_TRANSPARENT
+    CONTROL         "COM6",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,66,44,35,10
+    CONTROL         "COM7",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,66,66,35,10
+    CONTROL         "COM8",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,66,88,35,10
+    CONTROL         "COM9",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,110,22,35,10,WS_EX_TRANSPARENT
+    CONTROL         "COM10",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,110,45,39,10
+    CONTROL         "COM11",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,110,66,39,10
+    CONTROL         "COM12",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON,110,88,39,10
+    CONTROL         "COM13",IDC_RADIO14,"Button",BS_AUTORADIOBUTTON,154,22,39,10,WS_EX_TRANSPARENT
+    CONTROL         "COM14",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON,154,44,39,10
+    CONTROL         "COM15",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON,154,66,39,10
+    CONTROL         "COM16",IDC_RADIO17,"Button",BS_AUTORADIOBUTTON,154,88,39,10
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 196, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О программе"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,6,20,20
+    LTEXT           "DMProg, Version 1.0.1.1",IDC_STATIC,42,8,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,42,19,114,8
+    DEFPUSHBUTTON   "OK",IDOK,132,60,50,14,WS_GROUP
+    LTEXT           "Конфигуратор для модемов DM9600M",IDC_STATIC,43,30,137,18,0,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG_UPDATE DIALOGEX 0, 0, 246, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Обновление прошивки"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Обновить",ID_BUTTON_UPDATE,58,60,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,137,60,50,14
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,25,232,11
+    LTEXT           "Файл:",IDC_STATIC,7,9,21,8
+    EDITTEXT        IDC_EDIT_PATH,29,7,193,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDC_BUTTON_OPEN_DIALOG,225,7,14,12
+    LTEXT           "",IDC_STATIC_PROCESS,7,42,232,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DMPROG_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 315
+    END
+
+    IDD_DIALOG_COMM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_DIALOG_UPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "&Новый\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "&Открыть...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "&Сохранить\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "Сохранить &как...\tCtrl+A",   ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Выход",                       ID_APP_EXIT
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "&Панель инструментов",        ID_VIEW_TOOLBAR
+        MENUITEM "Строка статуса",              ID_VIEW_STATUS_BAR
+    END
+    POPUP "Помощь"
+    BEGIN
+        MENUITEM "О программе...",              ID_APP_ABOUT
+        MENUITEM "Обновление прошивки",         ID_HELP_UPDATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "MU"
+            VALUE "FileDescription", "DMProg"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DMProg.exe"
+            VALUE "OriginalFilename", "DMProg.exe"
+            VALUE "ProductName", "Configurator for DM9600"
+            VALUE "ProductVersion", "1.0.1.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\dmprog1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Конфигуратор\n\nDMProg\nXML файлы (*.xml)\n.xml\nDMProg.Document\nDMProg.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DMProg"
+    AFX_IDS_IDLEMESSAGE     "Готово"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Создать новый документ\nНовый"
+    ID_FILE_OPEN            "Открыть документ\nОткрыть"
+    ID_FILE_CLOSE           "Закрыть документ\nЗакрыть"
+    ID_FILE_SAVE            "Сохранить текущий документ\nСохранить"
+    ID_FILE_SAVE_AS         "Сохранить текущий документ под другим именем\nСохранить как"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "О программе\nО программе"
+    ID_APP_EXIT             "Закрыть программу\nВыход"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Показать/скрыть панель инструментов\nПанель инструментов"
+    ID_VIEW_STATUS_BAR      "Показать/скрыть строку статуса\nСтрока статуса"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_STATUS_TEXT          "Status text"
+    ID_STATUS_PROCESS       "Status Process"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_DMProgTYPE          ICON                    "res\\DMProgDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\DMProg.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
